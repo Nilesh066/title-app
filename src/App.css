@@ -1,0 +1,51 @@
+body {
+  background: #4fd1bb;
+  background: -webkit-linear-gradient(top right, #4fd1bb, #c0ffa8);
+  background: -moz-linear-gradient(top right, #4fd1bb, #c0ffa8);
+  background: linear-gradient(to bottom left, #4fd1bb, #c0ffa8);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#row {
+  background-color: white;
+  border: 2px solid black;
+  padding-bottom: 10px;
+}
+#title-app-button {
+  cursor: pointer;
+}
+
+#button {
+  border-radius: 20px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 30px;
+  background-color: rgb(24, 175, 24);
+}
+.label h2 {
+  text-align: center;
+}
+#row2 h2 {
+  text-align: center;
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  box-shadow: 3px 3px;
+}
+.col-8 label {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  background-color: white;
+  margin-top: 10px;
+  margin-right: 20px;
+  box-shadow: 3px 3px;
+  width: 80px;
+  height: 80px;
+}
+.col-8 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
