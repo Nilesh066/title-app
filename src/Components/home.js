@@ -6,17 +6,20 @@ import { useState } from 'react';
 
 
 function Home() {
-  const [home,setHome]=useState(false)
+  const [home,setHome]=useState(false);
+  const closeHome=()=>{
+      setHome(false);
+  }
   const getHome=()=>{
       setHome(true);
   }
   if(home===false){
-  return (
-    
+  return (   
      <div className="container-fluid">
         <div className="row" id="row">
             <div className="col-3" id="logo">
-                x<img src={"/logo.jpg"} alt="logo" height="90" weidth="90"/>
+                <span id="close" onClick={closeHome}>x</span>
+                <img src={"/logo.jpg"} alt="logo" height="90" weidth="90"/>
             </div>
             <div className="col-6" id="description">
                 <h2 id="title-app-button" onClick={getHome}>Title App</h2>
@@ -52,7 +55,8 @@ function Home() {
     <div className="container-fluid">
       <div className="row" id="row">
         <div className="col-3" id="logo">
-            x<img src={"/logo.jpg"} alt="logo" height="90" weidth="90"/>
+            <span id="close" onClick={closeHome}>x</span>
+            <img src={"/logo.jpg"} alt="logo" height="90" weidth="90"/>
         </div>
         <div className="col-6" id="description">
             <h2 id="title-app-button" onClick={getHome}>Title App</h2>

@@ -55,3 +55,6 @@ body {
 .Buy-now-button:hover {
   background-color: rgb(185, 176, 176);
 }
+#close {
+  cursor: pointer;
+}
